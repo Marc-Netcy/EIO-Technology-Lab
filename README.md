@@ -1,9 +1,18 @@
 # EIO-Technology-Lab 
-# **Lab Using OSINT Tools**
-
-
+# 1. Using OSINT Tools
 ---
-# Use SpiderFoot
+OSINT (Open Source Intelligence) tools are software applications or online services that collect and analyze information from publicly available sources. Security professionals, investigators, journalists, researchers, and organizations use them to gather intelligence without accessing private systems.
+
+### Common OSINT tools
+
+Here are two widely used OSINT tools and what they do:
+
+| Tool | Purpose |
+| ------ | -------- |
+| SpiderFoot | Automates collection of information from many public data sources. |
+| Recon-ng | Framework with modules for gathering and organizing OSINT data. |
+
+## Use SpiderFoot
 SpiderFoot is an automated OSINT scanner. It is included with Kali. SpiderFoot queries over 1000 open-information sources and presents the results in an easy-to-use GUI. SpiderFoot can also be run from a console. SpiderFoot seeds its scan with one of the following:
 
 - **Domain Names**
@@ -46,7 +55,7 @@ Typical uses include:
 
 <img width="1243" height="560" alt="2" src="https://github.com/user-attachments/assets/32e4bb2c-0480-4d33-adc1-489a84c593c2" />
 
-# Investigate Recon-ng
+## Investigate Recon-ng
 
 Recon-ng is an open-source reconnaissance framework designed to automate Open Source Intelligence (OSINT) gathering. It provides a modular interface that resembles a penetration testing framework, making it useful for collecting publicly available information during authorized security assessments.
 
@@ -134,4 +143,12 @@ It stores collected data in a local workspace, allowing you to organize and corr
 - **Threat intelligence**
 - **Asset inventory**
 - **Academic cybersecurity training**
+
+# 2. DNS Lookups
+
+DNS lookups are the process of querying the Domain Name System (DNS) to translate human-readable domain names (such as example.com) into the information computers need to communicate over the internet, such as IP addresses.
+
+### Why DNS lookups are important
+
+When you enter a website address into your browser, your computer performs a DNS lookup to determine the server's IP address. Without DNS, you would have to remember numerical IP addresses instead of easy-to-read domain names.
 
