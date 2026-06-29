@@ -208,3 +208,71 @@ If you want to find the domain name servers configured for a domain, you can use
 
 <img width="518" height="255" alt="3" src="https://github.com/user-attachments/assets/adb7f1a2-e2b8-4e69-936e-7ad50a69d5ff" />
 
+You can refer to the the following https://github.com/Marc-Netcy/EIO-Technology-Lab/tree/main/Information%20Gathering%20and%20Vulnerability%20Scanning/3.1.9%20Lab%20DNS%20Lookups for screenshot of more command to perform DNS Lookups.
+
+Some of these commands include:
+- **Changing the server used to perform lookups**
+- **Using the Whois function to obtain domain information**
+- **Using Dig to Obtain Additional Information**
+- **Performing Reverse DNS Lookups using Dig**
+- **Using the Host Utility to Perform rDNS Lookups**
+- **Using nslookup to Perform rDNS Lookups**
+
+# 3. Finding Information from SSL Certificates
+
+An SSL certificate is a digital certificate that encrypts the connection between a user's browser and a website. Although the term "SSL certificate" is still widely used, modern websites actually use TLS (Transport Layer Security), which replaced the older SSL (Secure Sockets Layer) protocol.
+
+### What an SSL/TLS certificate does
+
+An SSL/TLS certificate provides three main security benefits:
+
+1. Encryption
+- **Encrypts data sent between the browser and the web server.**
+- **Prevents others from reading sensitive information like passwords or credit card numbers.**
+2. Authentication
+- **Verifies that the website is actually owned by the organization it claims to be.**
+- **Helps protect users from connecting to fake or malicious websites.**
+3. Data Integrity
+- **Ensures data isn't altered while traveling between the browser and the server.**
+
+### Using SSL Analysis Tools in Kali to Gather Certificate Information 
+
+You can use several built-in tools to gather information about a website's SSL/TLS certificate. This is useful for identifying certificate details, expiration dates, supported protocols, and potential configuration issues.
+
+Listed below are three screenshot that show different ssl tools help menu
+
+```text
+┌──(kali㉿Kali)-[~]
+└─$ sslscan
+```
+<img width="1082" height="612" alt="13" src="https://github.com/user-attachments/assets/08775349-274c-4f7d-bc0c-27d4ff2df0e1" />
+
+```text
+┌──(kali㉿Kali)-[~]
+└─$ sslsplit -h
+```
+<img width="929" height="617" alt="14" src="https://github.com/user-attachments/assets/46c61d64-c426-4ce5-8cb4-8999fd7de421" />
+
+```text
+┌──(kali㉿Kali)-[~]
+└─$ sslyze -h
+```
+<img width="1280" height="600" alt="15" src="https://github.com/user-attachments/assets/46be450c-fa84-497e-b8e3-3e190d20d963" />
+
+When you execute the sslscan command, it connect to the target's HTTPS service, perform an SSL/TLS handshake, retrieve the server's certificate, enumerate supported protocols and cipher suites, and display the server's SSL/TLS configuration. This type of scan is commonly used to verify the security of a server's TLS configuration on systems you own or are authorized to assess. 
+
+```text
+┌──(kali㉿Kali)-[~]
+└─$ sslscan domain.com
+```
+<img width="896" height="610" alt="18" src="https://github.com/user-attachments/assets/0d474c29-4b51-400b-9611-80fa9eb016ce" />
+
+By executing the below command you are still scanning the target's SSL/TLS configuration but by using the pipe(|) and attached command you'll be saving the formatted output as an HTML file. The results are saved as a formatted HTML page, preserving the colors and layout from the terminal, making the report easier to read and share.
+
+```text
+┌──(kali㉿Kali)-[~]
+└─$ sslscan netacad.com | aha > sfa_cert.html
+```
+
+To get more command on performing passive reconnaissance you can refer to the following:
+- ****
