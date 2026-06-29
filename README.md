@@ -216,7 +216,7 @@ If you want to find the domain name servers configured for a domain, you can use
 
 <img width="518" height="255" alt="3" src="https://github.com/user-attachments/assets/adb7f1a2-e2b8-4e69-936e-7ad50a69d5ff" />
 
-You can refer to the the following https://github.com/Marc-Netcy/EIO-Technology-Lab/tree/main/Information%20Gathering%20and%20Vulnerability%20Scanning/3.1.9%20Lab%20DNS%20Lookups for screenshot of more command to perform DNS Lookups.
+You can refer to the the following [DNS Lookups](https://github.com/Marc-Netcy/EIO-Technology-Lab/tree/main/Information%20Gathering%20and%20Vulnerability%20Scanning/3.1.9%20Lab%20DNS%20Lookups) for screenshot of more command to perform DNS Lookups.
 
 Some of these commands include:
 - **Changing the server used to perform lookups**
@@ -283,5 +283,5 @@ By executing the below command you are still scanning the target's SSL/TLS confi
 ```
 
 To get more command on performing passive reconnaissance you can refer to the following:
-- **https://github.com/Marc-Netcy/EIO-Technology-Lab/tree/main/Information%20Gathering%20and%20Vulnerability%20Scanning/3.1.18%20Lab%20-%20Finding%20Out%20About%20the%20Orginazation**
-- **https://github.com/Marc-Netcy/EIO-Technology-Lab/tree/main/Information%20Gathering%20and%20Vulnerability%20Scanning/3.1.21%20Lab%20-%20Shodan%20Searches**
+- [Finding Out About the Orginazation](https://github.com/Marc-Netcy/EIO-Technology-Lab/tree/main/Information%20Gathering%20and%20Vulnerability%20Scanning/3.1.18%20Lab%20-%20Finding%20Out%20About%20the%20Orginazation)
+- [Shodan Searches](https://github.com/Marc-Netcy/EIO-Technology-Lab/tree/main/Information%20Gathering%20and%20Vulnerability%20Scanning/3.1.21%20Lab%20-%20Shodan%20Searches)
