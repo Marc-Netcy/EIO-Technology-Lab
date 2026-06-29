@@ -1,4 +1,12 @@
 # EIO-Technology-Lab 
+
+
+---
+# Table of Contents
+1. [Using OSINT Tools](#1-using-osint-tools)
+2. [DNS Lookups](#2-dns-lookups)
+3. [Finding Information from SSL Certificates](#3-finding-information-from-ssl-certificates)
+
 # 1. Using OSINT Tools
 ---
 OSINT (Open Source Intelligence) tools are software applications or online services that collect and analyze information from publicly available sources. Security professionals, investigators, journalists, researchers, and organizations use them to gather intelligence without accessing private systems.
@@ -275,4 +283,5 @@ By executing the below command you are still scanning the target's SSL/TLS confi
 ```
 
 To get more command on performing passive reconnaissance you can refer to the following:
-- ****
+- **https://github.com/Marc-Netcy/EIO-Technology-Lab/tree/main/Information%20Gathering%20and%20Vulnerability%20Scanning/3.1.18%20Lab%20-%20Finding%20Out%20About%20the%20Orginazation**
+- **https://github.com/Marc-Netcy/EIO-Technology-Lab/tree/main/Information%20Gathering%20and%20Vulnerability%20Scanning/3.1.21%20Lab%20-%20Shodan%20Searches**
